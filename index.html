@@ -22,30 +22,83 @@
         
           <header class="container-fluid color3">
             <div class="row">
-              <nav class="col-lg-7 col-lg-push-2 col-md-7 col-md-push-2 col-sm-12  col-xs-12 color1">
-                MENÚ 1 , MENÚ 2, MENÚ 3
-              </nav>
-              <div class="col-lg-3 col-lg-pull-0 col-md-3 col-md-pull-0 col-sm-12  col-xs-12 color2">
-                <span>G+</span>
-                <span>FB</span>
-                <span>YT</span>
-              </div>                            
+
+
+              <div class="col-lg-8 col-lg-push-2  col-lg-pull-2 col-md-7 col-md-push-2 col-sm-12  col-xs-12 ">
+                  <nav class="navbar navbar-default" role="navigation">
+                    <!-- El logotipo y el icono que despliega el menú se agrupan
+                         para mostrarlos mejor en los dispositivos móviles -->
+                    <div class="navbar-header">
+                      <button type="button" class="navbar-toggle" data-toggle="collapse"
+                              data-target=".navbar-ex1-collapse">
+                        <span class="sr-only">Desplegar navegación</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                      </button>
+                      <a class="navbar-brand" href="#">Logotipo</a>
+                    </div>
+                   
+                    <!-- Agrupar los enlaces de navegación, los formularios y cualquier
+                         otro elemento que se pueda ocultar al minimizar la barra -->
+                    <div class="collapse navbar-collapse navbar-ex1-collapse">
+                      <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Enlace #1</a></li>
+                        <li><a href="#">Enlace #2</a></li>
+                        <li class="dropdown">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            Menú #1 <b class="caret"></b>
+                          </a>
+                          <ul class="dropdown-menu">
+                            <li><a href="#">Acción #1</a></li>
+                            <li><a href="#">Acción #2</a></li>
+                            <li><a href="#">Acción #3</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Acción #4</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Acción #5</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                                                          
+                      <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#"><span class="glyphicon glyphicon-user"></span></a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-cloud-download"></span></a></li>
+                      </ul>
+                    </div>
+                  </nav>
+              </div>
+                                         
             </div>
 
 
             <div class="row">
               <div class="col-lg-7 col-lg-push-2 col-md-7 col-md-push-2 col-sm-12  col-xs-12 color2">
-                para el logo
+                <h1><img src="img/logo.png" alt=""></h1>
               </div>
-              <span class="col-lg-3 col-lg-pull-0 col-md-3 col-md-pull-0 col-sm-12  col-xs-12">
-                para la publicidad y otros
-              </span>
-            </div>          
+              <div class="col-lg-3 col-lg-pull-0 col-md-3 col-md-pull-0 col-sm-12  col-xs-12 color1">
+                <a href="#"><img src="img/anuncio468X60.jpg" alt=""></a>                          
+                
+              </div>
+            </div>    
+
+            <div class="row">
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 color4">
+                <marquee behavior="ALTERNATE" direction="left"><b>algo que se deslice</b></marquee>
+              </div>
+            </div>      
           </header>
 
-
+            
 
           <main class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                SLIDER
+              </div>
+            </div>
+            
+
             <div class="row">
               <div class="color1 entradas col-lg-8">ENTRADAS
 
@@ -80,8 +133,9 @@
        <!--para que jale cdn de google
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>   -->
 
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-        <script src="js/vendor/bootstrap.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/jquery-1.11.2.min.js"><\/script>')</script>
+        <script src="js/bootstrap.min.js"></script>
         <script src="js/main.js"></script>
+        <script src="js/prefixfree.min.js"></script>
     </body>
 </html>
